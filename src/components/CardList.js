@@ -2,6 +2,7 @@ import React from "react";
 import CardRecipe from "./CardRecipe";
 import Img from "../assets/Cheescake.jpg";
 
+
 export default function CardList(props) {
   const img = Img;
 
@@ -17,12 +18,13 @@ export default function CardList(props) {
       image: img,
       title: "Cheescake",
       description: "Extraordinary Cheescake to Lorem Impus Dolores2 ",
-    },{
+    },
+    {
       id: 3,
       image: img,
       title: "Cheescake",
       description: "Extraordinary Cheescake to Lorem Impus Dolores3 ",
-    }
+    },
   ];
 
   return (
@@ -31,12 +33,14 @@ export default function CardList(props) {
       {hardcodedArr.map((card) => {
         console.log();
         return (
-          <CardRecipe
-            key={card.id}
-            image={card.image}
-            title={card.title}
-            description={card.description}
-          />
+          
+            <CardRecipe 
+              key={card.id}
+              image={card.image}
+              title={card.title}
+              description={card.description}
+            />
+     
         );
       })}
     </div>

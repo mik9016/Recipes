@@ -4,7 +4,7 @@ import { Button, Container, Card } from "react-bootstrap";
 
 export default function CardRecipe(props) {
   return (
-    <Container>
+    <Container className='m-4'>
       <Card className="shadow " style={{ width: '18rem' }}>
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
